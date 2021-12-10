@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.project.fragments.recordfragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <VideoView
+            android:id="@+id/fragmentvideoView"
+            android:layout_width="416dp"
+            android:layout_height="436dp"
+            android:layout_marginTop="92dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="20dp">
+
+
+        <Button
+            android:id="@+id/btncamera"
+            android:layout_width="152dp"
+            android:layout_height="55dp"
+            android:text="camera"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="624dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue_800"
+            app:initialCornerAngle="40dp"
+            />
+
+        <Button
+            android:id="@+id/btngallery"
+            android:layout_width="150dp"
+            android:layout_height="56dp"
+            android:text="gallery"
+            android:backgroundTint="@color/blue_800"
+            tools:layout_editor_absoluteX="227dp"
+            tools:layout_editor_absoluteY="621dp"
+            android:layout_weight="1"
+            app:initialCornerAngle="40dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
